@@ -10,3 +10,18 @@ body, #slider, .wrap, .slide-content {
 .wrap {
   position: relative;
 }
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide1 {
+    background-image: url("../images/slide1.jpg");
+  }
+  .slide2 {
+    background-image: url("../images/slide2.jpg");
+  }
+  .slide3 {
+    background-image: url("../images/slide3.jpg");
+  }
