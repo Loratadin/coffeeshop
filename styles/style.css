@@ -25,3 +25,14 @@ body, #slider, .wrap, .slide-content {
   .slide3 {
     background-image: url("../images/slide3.jpg");
   }
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide-content span {
+    font-size: 5rem;
+    color: #fff;
+  }
