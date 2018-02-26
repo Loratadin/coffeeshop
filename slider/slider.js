@@ -25,3 +25,21 @@ function slideRight() {
     sliderImages[current + 1].style.display = "block";
     current++;
   }
+  // Left arrow click
+arrowLeft.addEventListener("click", function() {
+    if (current === 0) {
+      current = sliderImages.length;
+    }
+    slideLeft();
+  });
+  
+  // Right arrow click
+  arrowRight.addEventListener("click", function() {
+    if (current === sliderImages.length - 1) {
+      current = -1;
+    }
+    slideRight();
+  });
+  
+  startSlide();
+  
