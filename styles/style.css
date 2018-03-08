@@ -155,5 +155,18 @@ body,
     z-index: 3;
 }
 
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -2000px;
+    width: calc(50vw + 2000px);
+}
+
 
 /* /Section*/
