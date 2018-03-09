@@ -221,6 +221,15 @@ body,
     header .header-text {
         font-size: 170%;
     }
+    header #arrow-left {
+        border-width: 15px 20px 15px 0;
+    }
+    header #arrow-right {
+        border-width: 15px 0 15px 20px;
+    }
+    header .arrow {
+        margin-top: -13px;
+    }
     #aboutus h2 {
         font-size: 200%;
     }
