@@ -211,11 +211,31 @@ body,
     margin-left: 2000px;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 75%;
-    }
-}
-
 
 /* /Section*/
+
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+    header .slide-content {
+        font-size: 20%;
+    }
+    #aboutus h2 {
+        font-size: 200%;
+    }
+    #aboutus h3 {
+        font-size: 75%;
+        margin: 80px auto 15px auto;
+    }
+    #aboutus p {
+        font-size: 75%;
+        margin: 25px 20px 30px 20px;
+    }
+    #wrapper h1 {
+        font-size: 75%;
+    }
+    #wrapper p {
+        font-size: 20%;
+    }
+}
