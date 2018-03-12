@@ -249,6 +249,10 @@ body,
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* fix = parallax
+       scroll = normal
+    */
+    background-attachment: fixed;
 }
 
 
