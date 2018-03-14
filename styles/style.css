@@ -281,6 +281,20 @@ body,
     text-transform: uppercase;
 }
 
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+.ptext .border.dark {
+    color: #111;
+}
+
 
 /* Media Queries*/
 
