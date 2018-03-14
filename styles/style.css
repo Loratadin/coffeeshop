@@ -298,20 +298,37 @@ body,
 
 /* Food Menu */
 
-.food-menu {
+.grid-container {
     list-style-type: none;
+    overflow: hidden;
+    margin: 0 -10px;
+}
+
+.grid-column {
+    float: left;
+    width: 33%;
+    padding: 10px;
 }
 
 .food-menu-img {
-    width: 33%;
+    width: 50%;
 }
 
 .food-menu-logo {
-    width: 5%;
+    position: absolute;
+    width: 6%;
+    top: 20%;
+    left: 47%;
 }
 
 .food-menu-item {
-    display: inline-block;
+    position: relative;
+}
+
+.food-menu-item span {
+    position: absolute;
+    top: 30%;
+    left: 4%;
 }
 
 
