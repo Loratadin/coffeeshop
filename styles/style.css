@@ -296,6 +296,28 @@ body,
 }
 
 
+/* Food Menu */
+
+.food-menu {
+    list-style-type: none;
+}
+
+.food-menu-img {
+    width: 33%;
+}
+
+.food-menu-logo {
+    width: 5%;
+}
+
+.food-menu-item {
+    display: inline-block;
+}
+
+
+/* /Food Menu */
+
+
 /* Media Queries*/
 
 @media (max-width: 768px) {
