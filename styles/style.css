@@ -257,7 +257,7 @@ body,
 
 .section {
     text-align: center;
-    padding: 50px 80px;
+    padding: 100px 80px 130px 80px;
 }
 
 .section-light {
@@ -301,24 +301,35 @@ body,
 .grid-container {
     list-style-type: none;
     overflow: hidden;
-    margin: 0 -10px;
+    margin: 0;
 }
 
 .grid-column {
     float: left;
-    width: 33%;
+    width: 30%;
     padding: 10px;
 }
 
 .food-menu-img {
-    width: 50%;
+    width: 100%;
+    position: relative;
 }
 
 .food-menu-logo {
     position: absolute;
-    width: 6%;
-    top: 20%;
-    left: 47%;
+    width: 16%;
+    top: 14%;
+    left: 42%;
+}
+
+.food-menu-img:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 80px;
+    height: 4px;
+    background: #f6bbbb;
 }
 
 .food-menu-item {
@@ -329,6 +340,7 @@ body,
     position: absolute;
     top: 30%;
     left: 4%;
+    color: white;
 }
 
 
