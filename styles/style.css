@@ -322,13 +322,13 @@ body,
     left: 42%;
 }
 
-.food-menu-item:after {
+.item-1:after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 20px;
-    width: 80px;
-    height: 3px;
+    top: 96px;
+    left: 78px;
+    width: 100px;
+    height: 2px;
     background: #f6bbbb;
 }
 
@@ -341,10 +341,13 @@ body,
     top: 30%;
     left: 36%;
     color: #d9d9d9;
+}
+
+.item-1 span {
     transition: transform 900ms ease-in-out;
 }
 
-.food-menu-item:hover span {
+.item-1:hover span {
     transform: scale(1.5, 1.5) translateY(20px);
 }
 
