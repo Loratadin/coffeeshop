@@ -240,7 +240,7 @@
                                                         background-size: cover;
                                                         background-repeat: no-repeat;
                                                         /* fix = parallax
-     scroll = normal */
+    scroll = normal */
                                                         background-attachment: fixed;
                                                     }
                                                     
@@ -350,6 +350,14 @@
                                                         padding-top: 215px;
                                                     }
                                                     
+                                                    .item-2-frame {
+                                                        position: absolute;
+                                                        top: 370px;
+                                                        left: 43px;
+                                                        z-index: 1;
+                                                        opacity: 0;
+                                                    }
+                                                    
                                                     .item-2-frame .rectangular {
                                                         position: absolute;
                                                         width: 2px;
@@ -360,7 +368,25 @@
                                                     
                                                     .item-2-frame p {
                                                         color: #f6bbbb;
-                                                        padding: 150px 100px auto 300px;
+                                                        font-size: 20px;
+                                                        padding-left: 30px;
+                                                        padding-top: 20px;
+                                                    }
+                                                    
+                                                    .item-2:hover .item-2-frame {
+                                                        opacity: 1;
+                                                    }
+                                                    
+                                                    .item-2 span {
+                                                        transition: transform 900ms ease-in-out;
+                                                    }
+                                                    
+                                                    .item-2:hover span {
+                                                        transform: scale(1.5, 1.5) translateX(-59px) translateY(140px);
+                                                    }
+                                                    
+                                                    .item-2:hover .food-menu-img {
+                                                        opacity: 0.7;
                                                     }
                                                     /* /Food Menu */
                                                     /* Media Queries*/
