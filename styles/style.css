@@ -322,18 +322,9 @@ body,
     left: 42%;
 }
 
-.item-1:after {
-    content: "";
-    position: absolute;
-    top: 96px;
-    left: 78px;
-    width: 100px;
-    height: 2px;
-    background: #f6bbbb;
-}
-
 .food-menu-item {
     position: relative;
+    cursor: pointer;
 }
 
 .food-menu-item span {
@@ -349,6 +340,16 @@ body,
 
 .item-1:hover span {
     transform: scale(1.5, 1.5) translateY(20px);
+}
+
+.item-1-frame {
+    position: absolute;
+    top: 3vh;
+    left: 2.5vw;
+    width: 23vw;
+    height: 70vh;
+    border: 2px solid #f6bbbb;
+    z-index: 1;
 }
 
 
