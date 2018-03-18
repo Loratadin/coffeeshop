@@ -1,459 +1,457 @@
-                                                                       body,
-                                                                   #slider,
-                                                                   .wrap,
-                                                                   .slide-content {
-                                                                       margin: 0;
-                                                                       padding: 0;
-                                                                       font-size: 100%;
-                                                                       font-family: Arial, Helvetica, sans-serif;
-                                                                   }
-                                                                   
-                                                                   #slider,
-                                                                   .wrap,
-                                                                   .slide-content {
-                                                                       width: 100%;
-                                                                       height: 100vh;
-                                                                       overflow-x: hidden;
-                                                                   }
-                                                                   
-                                                                   .wrap {
-                                                                       position: relative;
-                                                                   }
-                                                                   
-                                                                   .slide {
-                                                                       background-size: cover;
-                                                                       background-position: center;
-                                                                       background-repeat: no-repeat;
-                                                                   }
-                                                                   
-                                                                   .slide1 {
-                                                                       background-image: url("../images/slide1.jpg");
-                                                                   }
-                                                                   
-                                                                   .slide2 {
-                                                                       background-image: url("../images/slide2.jpg");
-                                                                   }
-                                                                   
-                                                                   .slide3 {
-                                                                       background-image: url("../images/slide3.jpg");
-                                                                   }
-                                                                   
-                                                                   .slide-content {
-                                                                       display: flex;
-                                                                       flex-direction: column;
-                                                                       justify-content: center;
-                                                                       align-items: center;
-                                                                       text-align: center;
-                                                                   }
-                                                                   
-                                                                   .slide-content span {
-                                                                       font-size: 5rem;
-                                                                       color: #f6bbbb;
-                                                                   }
-                                                                   
-                                                                   .arrow {
-                                                                       cursor: pointer;
-                                                                       position: absolute;
-                                                                       top: 50%;
-                                                                       margin-top: -35px;
-                                                                       width: 0;
-                                                                       height: 0;
-                                                                       border-style: solid;
-                                                                   }
-                                                                   
-                                                                   #arrow-left {
-                                                                       border-width: 30px 40px 30px 0;
-                                                                       border-color: transparent #f6bbbb transparent transparent;
-                                                                       left: 0;
-                                                                       margin-left: 30px;
-                                                                   }
-                                                                   
-                                                                   #arrow-right {
-                                                                       border-width: 30px 0 30px 40px;
-                                                                       border-color: transparent transparent transparent #f6bbbb;
-                                                                       right: 0;
-                                                                       margin-right: 30px;
-                                                                   }
-                                                                   /*/ slider*/
-                                                                   /* about us*/
-                                                                   
-                                                                   #aboutus {
-                                                                       width: 100%;
-                                                                       min-height: 30vw;
-                                                                       text-align: center;
-                                                                   }
-                                                                   
-                                                                   .uppercase {
-                                                                       text-transform: uppercase;
-                                                                   }
-                                                                   
-                                                                   #aboutus h3 {
-                                                                       font-size: 18px;
-                                                                       color: #f6bbbb;
-                                                                       margin: 160px auto 30px auto;
-                                                                   }
-                                                                   
-                                                                   #aboutus h2 {
-                                                                       font-size: 40px;
-                                                                       color: #1d1d1d;
-                                                                       margin: 0;
-                                                                   }
-                                                                   
-                                                                   #aboutus p {
-                                                                       color: #1d1d1d;
-                                                                       font-size: 16px;
-                                                                       margin: 55px 200px auto 200px;
-                                                                       line-height: 30px;
-                                                                   }
-                                                                   /* /about us*/
-                                                                   /* Section*/
-                                                                   
-                                                                   #wrapper {
-                                                                       position: relative;
-                                                                       width: 100%;
-                                                                       min-height: 55vw;
-                                                                       overflow: hidden;
-                                                                   }
-                                                                   
-                                                                   .layer {
-                                                                       position: absolute;
-                                                                       width: 100vw;
-                                                                       min-height: 55vw;
-                                                                       overflow: hidden;
-                                                                   }
-                                                                   
-                                                                   .layer .content-wrap {
-                                                                       position: absolute;
-                                                                       width: 100vw;
-                                                                       min-height: 55vw;
-                                                                   }
-                                                                   
-                                                                   .layer .content-body {
-                                                                       width: 25%;
-                                                                       position: absolute;
-                                                                       top: 50%;
-                                                                       text-align: center;
-                                                                       transform: translateY(-50%);
-                                                                       color: #fff;
-                                                                   }
-                                                                   
-                                                                   .layer img {
-                                                                       position: absolute;
-                                                                       width: 35%;
-                                                                       top: 50%;
-                                                                       left: 50%;
-                                                                       transform: translate(-50%, -50%);
-                                                                   }
-                                                                   
-                                                                   .layer h1 {
-                                                                       font-size: 2em;
-                                                                   }
-                                                                   
-                                                                   .bottom {
-                                                                       background: #222;
-                                                                       z-index: 1;
-                                                                   }
-                                                                   
-                                                                   .bottom .content-body {
-                                                                       right: 5%;
-                                                                   }
-                                                                   
-                                                                   .bottom h1 {
-                                                                       color: #f6bbbb;
-                                                                   }
-                                                                   
-                                                                   .top {
-                                                                       background: #595b67;
-                                                                       color: #222;
-                                                                       z-index: 2;
-                                                                       width: 50vw;
-                                                                   }
-                                                                   
-                                                                   .top .content-body {
-                                                                       left: 5%;
-                                                                       color: #222;
-                                                                   }
-                                                                   
-                                                                   .handle {
-                                                                       position: absolute;
-                                                                       height: 100%;
-                                                                       display: block;
-                                                                       background-color: #f6bbbb;
-                                                                       width: 5px;
-                                                                       top: 0;
-                                                                       left: 50%;
-                                                                       z-index: 3;
-                                                                   }
-                                                                   
-                                                                   .skewed .handle {
-                                                                       top: 50%;
-                                                                       transform: rotate(30deg) translateY(-50%);
-                                                                       height: 200%;
-                                                                       transform-origin: top;
-                                                                   }
-                                                                   
-                                                                   .skewed .top {
-                                                                       transform: skew(-30deg);
-                                                                       margin-left: -2000px;
-                                                                       width: calc(50vw + 2000px);
-                                                                   }
-                                                                   
-                                                                   .skewed .top .content-wrap {
-                                                                       transform: skew(30deg);
-                                                                       margin-left: 2000px;
-                                                                   }
-                                                                   /* /Section*/
-                                                                   
-                                                                   .section,
-                                                                   .pimg1,
-                                                                   .pimg2,
-                                                                   .pimg3 {
-                                                                       height: 100%;
-                                                                       font-size: 16px;
-                                                                       font-family: "Lato", sans-serif;
-                                                                       font-weight: 400;
-                                                                       line-height: 1.8em;
-                                                                       color: #666;
-                                                                   }
-                                                                   
-                                                                   .pimg1 {
-                                                                       background-image: url('../images/pimg1.jpg');
-                                                                       min-height: 750px;
-                                                                   }
-                                                                   
-                                                                   .pimg2 {
-                                                                       background-image: url('../images/pimg2.jpg');
-                                                                       min-height: 400px;
-                                                                   }
-                                                                   
-                                                                   .pimg3 {
-                                                                       background-image: url('../images/pimg3.jpg');
-                                                                       min-height: 400px;
-                                                                   }
-                                                                   
-                                                                   .pimg1,
-                                                                   .pimg2,
-                                                                   .pimg3 {
-                                                                       position: relative;
-                                                                       opacity: 0.70;
-                                                                       background-position: center;
-                                                                       background-size: cover;
-                                                                       background-repeat: no-repeat;
-                                                                       /* fix = parallax, scroll = normal */
-                                                                       background-attachment: fixed;
-                                                                   }
-                                                                   
-                                                                   .section {
-                                                                       text-align: center;
-                                                                       padding: 100px 80px 130px 80px;
-                                                                   }
-                                                                   
-                                                                   .section-light {
-                                                                       background-color: #f4f4f4;
-                                                                       color: #666;
-                                                                   }
-                                                                   
-                                                                   .section-dark {
-                                                                       background-color: #282e34;
-                                                                       color: #ddd;
-                                                                   }
-                                                                   
-                                                                   .ptext {
-                                                                       position: absolute;
-                                                                       top: 50%;
-                                                                       width: 100%;
-                                                                       text-align: center;
-                                                                       color: #000;
-                                                                       font-size: 27px;
-                                                                       letter-spacing: 8px;
-                                                                       text-transform: uppercase;
-                                                                   }
-                                                                   
-                                                                   .ptext .border {
-                                                                       background-color: #111;
-                                                                       color: #fff;
-                                                                       padding: 20px;
-                                                                   }
-                                                                   
-                                                                   .ptext .border.trans {
-                                                                       background-color: transparent;
-                                                                   }
-                                                                   
-                                                                   .ptext .border.dark {
-                                                                       color: #111;
-                                                                   }
-                                                                   /* Food Menu */
-                                                                   
-                                                                   .grid-container {
-                                                                       list-style-type: none;
-                                                                       overflow: hidden;
-                                                                   }
-                                                                   
-                                                                   .grid-column {
-                                                                       float: left;
-                                                                       width: 30%;
-                                                                       padding: 1%;
-                                                                   }
-                                                                   
-                                                                   .food-menu-img {
-                                                                       width: 100%;
-                                                                       height: auto;
-                                                                       position: relative;
-                                                                   }
-                                                                   
-                                                                   .food-menu-logo {
-                                                                       position: absolute;
-                                                                       width: 16%;
-                                                                       top: 14%;
-                                                                       left: 42%;
-                                                                   }
-                                                                   
-                                                                   .food-menu-item {
-                                                                       position: relative;
-                                                                       cursor: pointer;
-                                                                   }
-                                                                   
-                                                                   .food-menu-item span {
-                                                                       position: absolute;
-                                                                       top: 30%;
-                                                                       left: 30%;
-                                                                       color: #d9d9d9;
-                                                                   }
-                                                                   
-                                                                   .item-1 span {
-                                                                       transition: transform 900ms ease-in-out;
-                                                                   }
-                                                                   
-                                                                   .item-1:hover span {
-                                                                       transform: scale(1.5, 1.5) translateY(20px);
-                                                                   }
-                                                                   
-                                                                   .item-1:hover .item-1-frame {
-                                                                       opacity: 1;
-                                                                   }
-                                                                   
-                                                                   .item-1-frame {
-                                                                       position: absolute;
-                                                                       top: 8%;
-                                                                       left: 8%;
-                                                                       width: 83%;
-                                                                       height: 81%;
-                                                                       border: 2px solid #f6bbbb;
-                                                                       z-index: 1;
-                                                                       opacity: 0;
-                                                                   }
-                                                                   
-                                                                   .item-1-frame p {
-                                                                       color: #d9d9d9;
-                                                                       padding-top: 60%;
-                                                                   }
-                                                                   
-                                                                   .item-2-frame {
-                                                                       position: absolute;
-                                                                       top: 70%;
-                                                                       left: 10%;
-                                                                       z-index: 1;
-                                                                       opacity: 0;
-                                                                   }
-                                                                   
-                                                                   .item-2-frame .rectangular {
-                                                                       position: absolute;
-                                                                       width: 2px;
-                                                                       height: 46%;
-                                                                       background-color: #f6bbbb;
-                                                                   }
-                                                                   
-                                                                   .item-2-frame p {
-                                                                       color: #f6bbbb;
-                                                                       font-size: 20px;
-                                                                       padding-left: 13%;
-                                                                       padding-bottom: 20%;
-                                                                   }
-                                                                   
-                                                                   .item-2:hover .item-2-frame {
-                                                                       opacity: 1;
-                                                                   }
-                                                                   
-                                                                   .item-2 span {
-                                                                       transition: transform 900ms ease-in-out;
-                                                                   }
-                                                                   
-                                                                   .item-2:hover span {
-                                                                       transform: scale(1.5, 1.5) translateX(-15%) translateY(80%);
-                                                                   }
-                                                                   
-                                                                   .item-2:hover .food-menu-img {
-                                                                       opacity: 0.7;
-                                                                   }
-                                                                   
-                                                                   .item-3 .rectangular1 {
-                                                                       top: 8%;
-                                                                       left: 8%;
-                                                                   }
-                                                                   
-                                                                   .item-3 .rectangular2 {
-                                                                       top: 50%;
-                                                                       right: 7%;
-                                                                   }
-                                                                   
-                                                                   .item-3 .rectangular1,
-                                                                   .item-3 .rectangular2 {
-                                                                       position: absolute;
-                                                                       width: 0.5%;
-                                                                       height: 0.5%;
-                                                                       z-index: 1;
-                                                                       opacity: 0;
-                                                                       background-color: #f6bbbb;
-                                                                       animation: myrectangular 2s ease-in-out 0s infinite;
-                                                                       animation-direction: alternate;
-                                                                   }
-                                                                   
-                                                                   @keyframes myrectangular {
-                                                                       from {
-                                                                           width: 1%;
-                                                                       }
-                                                                       to {
-                                                                           width: 85%;
-                                                                       }
-                                                                   }
-                                                                   
-                                                                   .item-3:hover .rectangular1,
-                                                                   .item-3:hover .rectangular2 {
-                                                                       opacity: 1;
-                                                                   }
-                                                                   /* /Food Menu */
-                                                                   /* Media Queries*/
-                                                                   
-                                                                   @media (max-width: 1024px) {}
-                                                                   
-                                                                   @media (max-width: 768px) {
-                                                                       header .header-text {
-                                                                           font-size: 170%;
-                                                                       }
-                                                                       header #arrow-left {
-                                                                           border-width: 15px 20px 15px 0;
-                                                                       }
-                                                                       header #arrow-right {
-                                                                           border-width: 15px 0 15px 20px;
-                                                                       }
-                                                                       header .arrow {
-                                                                           margin-top: -13px;
-                                                                       }
-                                                                       #aboutus h2 {
-                                                                           font-size: 200%;
-                                                                       }
-                                                                       #aboutus h3 {
-                                                                           font-size: 75%;
-                                                                           margin: 80px auto 15px auto;
-                                                                       }
-                                                                       #aboutus p {
-                                                                           font-size: 75%;
-                                                                           margin: 25px 20px 30px 20px;
-                                                                       }
-                                                                       #wrapper h1 {
-                                                                           font-size: 75%;
-                                                                       }
-                                                                       #wrapper p {
-                                                                           font-size: 20%;
-                                                                       }
-                                                                       @media (max-width: 450px) {}
+           body,
+       #slider,
+       .wrap,
+       .slide-content {
+           margin: 0;
+           padding: 0;
+           font-size: 100%;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+       
+       #slider,
+       .wrap,
+       .slide-content {
+           width: 100%;
+           height: 100vh;
+           overflow-x: hidden;
+       }
+       
+       .wrap {
+           position: relative;
+       }
+       
+       .slide {
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+       }
+       
+       .slide1 {
+           background-image: url("../images/slide1.jpg");
+       }
+       
+       .slide2 {
+           background-image: url("../images/slide2.jpg");
+       }
+       
+       .slide3 {
+           background-image: url("../images/slide3.jpg");
+       }
+       
+       .slide-content {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+       }
+       
+       .slide-content span {
+           font-size: 5rem;
+           color: #f6bbbb;
+       }
+       
+       .arrow {
+           cursor: pointer;
+           position: absolute;
+           top: 50%;
+           margin-top: -35px;
+           width: 0;
+           height: 0;
+           border-style: solid;
+       }
+       
+       #arrow-left {
+           border-width: 30px 40px 30px 0;
+           border-color: transparent #f6bbbb transparent transparent;
+           left: 0;
+           margin-left: 30px;
+       }
+       
+       #arrow-right {
+           border-width: 30px 0 30px 40px;
+           border-color: transparent transparent transparent #f6bbbb;
+           right: 0;
+           margin-right: 30px;
+       }
+       /*/ slider*/
+       /* about us*/
+       
+       #aboutus {
+           width: 100%;
+           min-height: 30vw;
+           text-align: center;
+       }
+       
+       .uppercase {
+           text-transform: uppercase;
+       }
+       
+       #aboutus h3 {
+           font-size: 18px;
+           color: #f6bbbb;
+           margin: 160px auto 30px auto;
+       }
+       
+       #aboutus h2 {
+           font-size: 40px;
+           color: #1d1d1d;
+           margin: 0;
+       }
+       
+       #aboutus p {
+           color: #1d1d1d;
+           font-size: 16px;
+           margin: 55px 200px auto 200px;
+           line-height: 30px;
+       }
+       /* /about us*/
+       /* Section*/
+       
+       #wrapper {
+           position: relative;
+           width: 100%;
+           min-height: 55vw;
+           overflow: hidden;
+       }
+       
+       .layer {
+           position: absolute;
+           width: 100vw;
+           min-height: 55vw;
+           overflow: hidden;
+       }
+       
+       .layer .content-wrap {
+           position: absolute;
+           width: 100vw;
+           min-height: 55vw;
+       }
+       
+       .layer .content-body {
+           width: 25%;
+           position: absolute;
+           top: 50%;
+           text-align: center;
+           transform: translateY(-50%);
+           color: #fff;
+       }
+       
+       .layer img {
+           position: absolute;
+           width: 35%;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+       }
+       
+       .layer h1 {
+           font-size: 2em;
+       }
+       
+       .bottom {
+           background: #222;
+           z-index: 1;
+       }
+       
+       .bottom .content-body {
+           right: 5%;
+       }
+       
+       .bottom h1 {
+           color: #f6bbbb;
+       }
+       
+       .top {
+           background: #595b67;
+           color: #222;
+           z-index: 2;
+           width: 50vw;
+       }
+       
+       .top .content-body {
+           left: 5%;
+           color: #222;
+       }
+       
+       .handle {
+           position: absolute;
+           height: 100%;
+           display: block;
+           background-color: #f6bbbb;
+           width: 5px;
+           top: 0;
+           left: 50%;
+           z-index: 3;
+       }
+       
+       .skewed .handle {
+           top: 50%;
+           transform: rotate(30deg) translateY(-50%);
+           height: 200%;
+           transform-origin: top;
+       }
+       
+       .skewed .top {
+           transform: skew(-30deg);
+           margin-left: -2000px;
+           width: calc(50vw + 2000px);
+       }
+       
+       .skewed .top .content-wrap {
+           transform: skew(30deg);
+           margin-left: 2000px;
+       }
+       /* /Section*/
+       
+       .section,
+       .pimg1,
+       .pimg2,
+       .pimg3 {
+           height: 100%;
+           font-size: 16px;
+           font-family: "Lato", sans-serif;
+           font-weight: 400;
+           line-height: 1.8em;
+           color: #666;
+       }
+       
+       .pimg1 {
+           background-image: url('../images/pimg1.jpg');
+           min-height: 750px;
+       }
+       
+       .pimg2 {
+           background-image: url('../images/pimg2.jpg');
+           min-height: 400px;
+       }
+       
+       .pimg3 {
+           background-image: url('../images/pimg3.jpg');
+           min-height: 400px;
+       }
+       
+       .pimg1,
+       .pimg2,
+       .pimg3 {
+           position: relative;
+           opacity: 0.70;
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           /* fix = parallax, scroll = normal */
+           background-attachment: fixed;
+       }
+       
+       .section {
+           text-align: center;
+           padding: 100px 80px 130px 80px;
+       }
+       
+       .section-light {
+           background-color: #f4f4f4;
+           color: #666;
+       }
+       
+       .section-dark {
+           background-color: #282e34;
+           color: #ddd;
+       }
+       
+       .ptext {
+           position: absolute;
+           top: 50%;
+           width: 100%;
+           text-align: center;
+           color: #000;
+           font-size: 27px;
+           letter-spacing: 8px;
+           text-transform: uppercase;
+       }
+       
+       .ptext .border {
+           background-color: #111;
+           color: #fff;
+           padding: 20px;
+       }
+       
+       .ptext .border.trans {
+           background-color: transparent;
+       }
+       
+       .ptext .border.dark {
+           color: #111;
+       }
+       /* Food Menu */
+       
+       .grid-container {
+           list-style-type: none;
+           overflow: hidden;
+       }
+       
+       .grid-column {
+           float: left;
+           width: 30%;
+           padding: 1%;
+       }
+       
+       .item-1-container {
+           position: relative;
+           width: 100%;
+           height: auto;
+           background: url('../images/fruits.jpg') no-repeat top-center;
+           background-size: cover;
+       }
+       
+       .food-menu-logo {
+           position: absolute;
+           width: 16%;
+           top: 14%;
+           left: 42%;
+       }
+       
+       .food-menu-item {
+           position: relative;
+           cursor: pointer;
+       }
+       
+       .item-1 span {
+           position: absolute;
+           text-align: center;
+           color: #d9d9d9;
+           transition: transform 900ms ease-in-out;
+       }
+       
+       .item-1:hover span {
+           transform: scale(1.5, 1.5) translateY(20px);
+       }
+       
+       .item-1:hover .item-1-frame {
+           opacity: 1;
+       }
+       
+       .item-1-frame {
+           position: absolute;
+           top: 8%;
+           left: 8%;
+           width: 83%;
+           height: 81%;
+           border: 2px solid #f6bbbb;
+           z-index: 1;
+           opacity: 0;
+       }
+       
+       .item-1-frame p {
+           color: #d9d9d9;
+           padding-top: 60%;
+       }
+       
+       .item-2-frame {
+           position: absolute;
+           top: 70%;
+           left: 10%;
+           z-index: 1;
+           opacity: 0;
+       }
+       
+       .item-2-frame .rectangular {
+           position: absolute;
+           width: 2px;
+           height: 46%;
+           background-color: #f6bbbb;
+       }
+       
+       .item-2-frame p {
+           color: #f6bbbb;
+           font-size: 20px;
+           padding-left: 13%;
+           padding-bottom: 20%;
+       }
+       
+       .item-2:hover .item-2-frame {
+           opacity: 1;
+       }
+       
+       .item-2 span {
+           transition: transform 900ms ease-in-out;
+       }
+       
+       .item-2:hover span {
+           transform: scale(1.5, 1.5) translateX(-15%) translateY(80%);
+       }
+       
+       .item-2:hover .food-menu-img {
+           opacity: 0.7;
+       }
+       
+       .item-3 .rectangular1 {
+           top: 8%;
+           left: 8%;
+       }
+       
+       .item-3 .rectangular2 {
+           top: 50%;
+           right: 7%;
+       }
+       
+       .item-3 .rectangular1,
+       .item-3 .rectangular2 {
+           position: absolute;
+           width: 0.5%;
+           height: 0.5%;
+           z-index: 1;
+           opacity: 0;
+           background-color: #f6bbbb;
+           animation: myrectangular 2s ease-in-out 0s infinite;
+           animation-direction: alternate;
+       }
+       
+       @keyframes myrectangular {
+           from {
+               width: 1%;
+           }
+           to {
+               width: 85%;
+           }
+       }
+       
+       .item-3:hover .rectangular1,
+       .item-3:hover .rectangular2 {
+           opacity: 1;
+       }
+       /* /Food Menu */
+       /* Media Queries*/
+       
+       @media (max-width: 1024px) {}
+       
+       @media (max-width: 768px) {
+           header .header-text {
+               font-size: 170%;
+           }
+           header #arrow-left {
+               border-width: 15px 20px 15px 0;
+           }
+           header #arrow-right {
+               border-width: 15px 0 15px 20px;
+           }
+           header .arrow {
+               margin-top: -13px;
+           }
+           #aboutus h2 {
+               font-size: 200%;
+           }
+           #aboutus h3 {
+               font-size: 75%;
+               margin: 80px auto 15px auto;
+           }
+           #aboutus p {
+               font-size: 75%;
+               margin: 25px 20px 30px 20px;
+           }
+           #wrapper h1 {
+               font-size: 75%;
+           }
+           #wrapper p {
+               font-size: 20%;
+           }
+           @media (max-width: 450px) {}
