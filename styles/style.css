@@ -211,31 +211,32 @@ body,
 
 /* /Skewed*/
 
+/* other sections */
 .section,
 .pimg1,
 .pimg2,
 .pimg3 {
   height: 100%;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.8em;
+  line-height: 16px;
   color: #666;
 }
 
 .pimg1 {
   background-image: url("../images/pimg1.jpg");
-  min-height: 750px;
+  min-height: 300px;
 }
 
 .pimg2 {
   background-image: url("../images/pimg2.jpg");
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .pimg3 {
   background-image: url("../images/pimg3.jpg");
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .pimg1,
@@ -246,13 +247,17 @@ body,
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* fix = parallax, scroll = normal */
+  /* fixed = parallax, scroll = normal */
   background-attachment: fixed;
 }
 
 .section {
   text-align: center;
-  padding: 100px 80px 130px 80px;
+  padding: 40px 5px 50px 5px;
+}
+.section h2 {
+  padding: 0;
+  margin: 0;
 }
 
 .section-light {
@@ -271,15 +276,15 @@ body,
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
+  font-size: 14px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .ptext .border {
   background-color: #111;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .ptext .border.trans {
@@ -436,8 +441,6 @@ body,
 
 /* Test Section */
 
-/* /Test Section */
-
 section h2 {
   text-align: center;
   color: #666;
@@ -507,6 +510,7 @@ section h2 {
   color: #d9d9d9;
   padding-top: 60%;
 }
+/* /Test Section */
 
 /* Media Queries*/
 
@@ -629,5 +633,33 @@ section h2 {
   }
   .handle {
     width: 5px;
+  }
+  /* other sections */
+  .section,
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .pimg1 {
+    min-height: 750px;
+  }
+  .pimg2 {
+    min-height: 400px;
+  }
+  .pimg3 {
+    min-height: 400px;
+  }
+  .section {
+    padding: 100px 80px 130px 80px;
+  }
+  .ptext {
+    font-size: 27px;
+    letter-spacing: 8px;
+  }
+
+  .ptext .border {
+    padding: 20px;
   }
 }
