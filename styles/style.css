@@ -554,6 +554,33 @@ section h2 {
   #wrapper p {
     font-size: 10px;
   }
+  /* other sections */
+  .section,
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .pimg1 {
+    min-height: 550px;
+  }
+  .pimg2 {
+    min-height: 250px;
+  }
+  .pimg3 {
+    min-height: 250px;
+  }
+  .section {
+    padding: 80px 30px 100px 30px;
+  }
+  .ptext {
+    font-size: 22px;
+    letter-spacing: 5px;
+  }
+  .ptext .border {
+    padding: 15px;
+  }
 }
 @media /* large */ (min-width: 769px) {
   /* Header */
@@ -585,6 +612,33 @@ section h2 {
   }
   .handle {
     width: 3.5px;
+  }
+  /* other sections */
+  .section,
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .pimg1 {
+    min-height: 650px;
+  }
+  .pimg2 {
+    min-height: 350px;
+  }
+  .pimg3 {
+    min-height: 350px;
+  }
+  .section {
+    padding: 90px 50px 110px 50px;
+  }
+  .ptext {
+    font-size: 24px;
+    letter-spacing: 6px;
+  }
+  .ptext .border {
+    padding: 17px;
   }
 }
 @media /* extra-large */ (min-width: 1025px) {
@@ -658,7 +712,6 @@ section h2 {
     font-size: 27px;
     letter-spacing: 8px;
   }
-
   .ptext .border {
     padding: 20px;
   }
