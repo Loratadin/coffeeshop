@@ -508,8 +508,8 @@ section h2 {
 
 /* Media Queries*/
 
-@media (max-width: 1024px) {}
-
+@media (min-width: 450px) {
+}
 @media (max-width: 768px) {
   header .header-text {
     font-size: 170%;
@@ -540,4 +540,6 @@ section h2 {
   #wrapper p {
     font-size: 20%;
   }
+}
+@media (max-width: 1024px) {
 }
