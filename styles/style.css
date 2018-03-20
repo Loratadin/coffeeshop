@@ -508,9 +508,7 @@ section h2 {
 
 /* Media Queries*/
 
-@media (min-width: 450px) {
-}
-@media (max-width: 768px) {
+@media /* medium */ (min-width: 451px) {
   header .header-text {
     font-size: 170%;
   }
@@ -541,5 +539,7 @@ section h2 {
     font-size: 20%;
   }
 }
-@media (max-width: 1024px) {
+@media /* large */ (min-width: 769px) {
+}
+@media /* extra-large */ (min-width: 1025px) {
 }
