@@ -453,15 +453,14 @@ section h2 {
 }
 
 .menu-grid-container {
-  list-style-type: none;
-  overflow: hidden;
   display: flex;
+  justify-content: space-around;
 }
 
 .fruits-container,
 .pasta-container,
 .steak-container {
-  width: 100%;
+  width: 30%;
   height: auto;
   position: relative;
   background-repeat: no-repeat;
