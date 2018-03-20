@@ -296,19 +296,24 @@ body,
 }
 
 /* Food Menu */
-
+.food-menu {
+  padding-bottom: 50px;
+}
 .grid-container {
   list-style-type: none;
   overflow: hidden;
-  margin: 0 -1%;
+  margin-right: -1%;
+  margin-left: -1%;
 }
 
 .grid-column {
   float: left;
-  width: 30%;
+  width: 31.3%;
   padding: 1%;
 }
-
+.food-menu {
+  margin-left: -40px;
+}
 .food-menu-img {
   width: 100%;
   height: auto;
@@ -450,10 +455,7 @@ section h2 {
 .menu-grid-container {
   list-style-type: none;
   overflow: hidden;
-  display: grid;
-  grid-gap: 1%;
-  grid-template-columns: 32% 32% 32%;
-  align-items: center;
+  display: flex;
 }
 
 .fruits-container,
