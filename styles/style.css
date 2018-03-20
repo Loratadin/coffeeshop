@@ -92,20 +92,20 @@ body,
 #aboutus h3 {
   font-size: 18px;
   color: #f6bbbb;
-  margin: 160px auto 30px auto;
+  margin: 60px auto 15px auto;
 }
 
 #aboutus h2 {
-  font-size: 40px;
+  font-size: 24px;
   color: #1d1d1d;
-  margin: 0;
+  margin: 0 auto;
 }
 
 #aboutus p {
   color: #1d1d1d;
   font-size: 16px;
-  margin: 55px 200px auto 200px;
-  line-height: 30px;
+  margin: 15px 5px 60px 5px;
+  line-height: 25px;
 }
 
 /* /about us*/
@@ -525,15 +525,15 @@ section h2 {
     margin-top: -13px;
   }
   #aboutus h2 {
-    font-size: 200%;
+    font-size: 20px;
   }
   #aboutus h3 {
-    font-size: 75%;
-    margin: 80px auto 15px auto;
+    font-size: 18px;
+    margin: 40px auto 15px auto;
   }
   #aboutus p {
-    font-size: 75%;
-    margin: 25px 20px 30px 20px;
+    font-size: 16px;
+    margin: 15px 20px 30px 30px;
   }
   #wrapper h1 {
     font-size: 75%;
@@ -545,6 +545,17 @@ section h2 {
 @media /* large */ (min-width: 769px) {
   .slide-content span {
     font-size: 60px;
+  }
+  #aboutus h2 {
+    font-size: 35px;
+  }
+  #aboutus h3 {
+    font-size: 22px;
+    margin: 80px auto 15px auto;
+  }
+  #aboutus p {
+    font-size: 18px;
+    margin: 25px 60px 20px 60px;
   }
 }
 @media /* extra-large */ (min-width: 1025px) {
@@ -562,5 +573,24 @@ section h2 {
   }
   header .arrow {
     margin-top: -19px;
+  }
+  #aboutus h2 {
+    font-size: 40px;
+  }
+  #aboutus h3 {
+    font-size: 28px;
+    margin: 80px auto 15px auto;
+  }
+  #aboutus p {
+    font-size: 18px;
+    margin: 25px 10px 20px 10px;
+  }
+  #aboutus {
+    width: 60vw;
+    min-height: 30vw;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
