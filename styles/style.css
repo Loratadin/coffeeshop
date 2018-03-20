@@ -110,7 +110,7 @@ body,
 
 /* /about us*/
 
-/* Section*/
+/* Skewed*/
 
 #wrapper {
   position: relative;
@@ -148,9 +148,11 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.layer h1 {
-  font-size: 2em;
+#wrapper h1 {
+  font-size: 12px;
+}
+#wrapper p {
+  font-size: 8px;
 }
 
 .bottom {
@@ -183,7 +185,7 @@ body,
   height: 100%;
   display: block;
   background-color: #f6bbbb;
-  width: 5px;
+  width: 2px;
   top: 0;
   left: 50%;
   z-index: 3;
@@ -207,7 +209,7 @@ body,
   margin-left: 2000px;
 }
 
-/* /Section*/
+/* /Skewed*/
 
 .section,
 .pimg1,
@@ -509,6 +511,7 @@ section h2 {
 /* Media Queries*/
 
 @media /* medium */ (min-width: 451px) {
+  /* Header */
   .slide-content span {
     font-size: 40px;
     padding: 0 50px;
@@ -524,6 +527,7 @@ section h2 {
   header .arrow {
     margin-top: -13px;
   }
+  /* About us */
   #about-us {
     width: 98%;
     margin: 0 auto;
@@ -539,17 +543,20 @@ section h2 {
     font-size: 16px;
     margin: 15px auto 50px auto;
   }
+  /* Skewed */
   #wrapper h1 {
-    font-size: 75%;
+    font-size: 16px;
   }
   #wrapper p {
-    font-size: 20%;
+    font-size: 10px;
   }
 }
 @media /* large */ (min-width: 769px) {
+  /* Header */
   .slide-content span {
     font-size: 60px;
   }
+  /* About us */
   #about-us {
     width: 80%;
     margin: 0 auto;
@@ -565,8 +572,19 @@ section h2 {
     font-size: 18px;
     margin: 25px auto 60px auto;
   }
+  /* Skewed */
+  #wrapper h1 {
+    font-size: 20px;
+  }
+  #wrapper p {
+    font-size: 14px;
+  }
+  .handle {
+    width: 3.5px;
+  }
 }
 @media /* extra-large */ (min-width: 1025px) {
+  /* Header */
   .slide-content span {
     font-size: 90px;
     padding: 0 90px;
@@ -582,12 +600,12 @@ section h2 {
   header .arrow {
     margin-top: -19px;
   }
+  /* About us */
   #about-us {
     width: 80%;
     max-width: 1000px;
-    min-height: 30vw;
     text-align: center;
-    padding: 30px 0 30px 0;
+    padding: 30px 0;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -601,5 +619,15 @@ section h2 {
   #about-us p {
     font-size: 18px;
     margin: 25px auto 60px auto;
+  }
+  /* Skewed */
+  #wrapper h1 {
+    font-size: 24px;
+  }
+  #wrapper p {
+    font-size: 18px;
+  }
+  .handle {
+    width: 5px;
   }
 }
