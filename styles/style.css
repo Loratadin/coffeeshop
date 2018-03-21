@@ -1,8 +1,9 @@
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
+}
+body {
   overflow-x: hidden;
 }
 
@@ -548,6 +549,41 @@ body {
 .pasta:hover {
   opacity: 0.7;
 }
+.steak .decor-line1 {
+  top: 8%;
+  left: 8%;
+}
+
+.steak .decor-line2 {
+  top: 50%;
+  right: 7%;
+}
+
+.steak .decor-line1,
+.steak .decor-line2 {
+  position: absolute;
+  width: 0.5%;
+  height: 0.5%;
+  z-index: 1;
+  opacity: 1;
+  background-color: #f6bbbb;
+  animation: mydecor 2s ease-in-out 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mydecor {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.steak:hover .decor-line1,
+.steak:hover .decor-line2 {
+  opacity: 1;
+}
 /* /Test Section */
 
 /* Media Queries*/
@@ -633,7 +669,7 @@ body {
     height: 400px;
     margin: 50px auto 50px auto;
   }
-  .fruits span {
+  .menu span {
     left: 36%;
   }
   .second-frame p {
@@ -722,7 +758,7 @@ body {
     width: 250px;
     height: 250px;
   }
-  .fruits span {
+  .menu span {
     left: 30%;
   }
   .second-frame p {
