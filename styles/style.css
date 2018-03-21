@@ -482,7 +482,7 @@ body {
 }
 
 .fruits span {
-  text-align: center;
+  position: absolute;
   top: 30%;
   left: 30%;
   color: #d9d9d9;
@@ -505,12 +505,49 @@ body {
   height: 81%;
   border: 2px solid #f6bbbb;
   z-index: 1;
-  opacity: 0;
+  opacity: 1;
 }
 
 .first-frame p {
   color: #d9d9d9;
   padding-top: 60%;
+}
+.item-2-frame {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.item-2-frame .rectangular {
+  position: absolute;
+  width: 2px;
+  height: 46%;
+  background-color: #f6bbbb;
+}
+
+.item-2-frame p {
+  color: #f6bbbb;
+  font-size: 20px;
+  padding-left: 13%;
+  padding-bottom: 20%;
+}
+
+.item-2:hover .item-2-frame {
+  opacity: 1;
+}
+
+.item-2 span {
+  transition: transform 900ms ease-in-out;
+}
+
+.item-2:hover span {
+  transform: scale(1.5, 1.5) translateX(-15%) translateY(80%);
+}
+
+.item-2:hover .food-menu-img {
+  opacity: 0.7;
 }
 /* /Test Section */
 
@@ -597,6 +634,9 @@ body {
     height: 400px;
     margin: 50px auto 50px auto;
   }
+  .fruits span {
+    left: 36%;
+  }
 }
 @media /* large */ (min-width: 769px) {
   /* Header */
@@ -671,6 +711,9 @@ body {
   .menu-item {
     width: 250px;
     height: 250px;
+  }
+  .fruits span {
+    left: 30%;
   }
 }
 @media /* extra-large */ (min-width: 1025px) {
@@ -761,5 +804,8 @@ body {
   .menu-wrap {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .fruits span {
+    left: 32%;
   }
 }
