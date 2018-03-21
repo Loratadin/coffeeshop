@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #slider,
@@ -660,7 +662,7 @@ body {
     text-align: center;
   }
   .test h2 {
-    margin: 80px auto 60px auto;
+    margin: 80px auto 40px auto;
   }
   .menu-wrap {
     display: flex;
@@ -750,10 +752,14 @@ body {
     padding-bottom: 100px;
   }
   .test h2 {
-    margin: 60px auto 60px auto;
+    margin: 60px auto 40px auto;
   }
   .menu-item {
     width: 300px;
     height: 300px;
+  }
+  .menu-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
