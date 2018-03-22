@@ -78,13 +78,20 @@ body {
 /*/ slider*/
 
 /* Hamburger Menu */
+.hamburger-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
 .hamburger {
-  display: block;
+  position: absolute;
+  margin-top: 6%;
+  right: 9%;
   cursor: pointer;
 }
 .hamburger .line {
   width: 40px;
-  height: 3px;
+  height: 2px;
   display: block;
   background-color: #f6bbbb;
   margin: 8px auto;
@@ -488,6 +495,15 @@ body {
   header .arrow {
     margin-top: -13px;
   }
+  /* Hamburger menu */
+  .hamburger {
+    margin-top: 7%;
+    right: 10%;
+  }
+  .hamburger .line {
+    width: 45px;
+    margin: 7px auto;
+  }
   /* About us */
   #about-us {
     width: 98%;
@@ -572,6 +588,15 @@ body {
   .slide-content span {
     font-size: 60px;
   }
+  /* Hamburger menu */
+  .hamburger {
+    top: 8%;
+    right: 7%;
+  }
+  .hamburger .line {
+    width: 50px;
+    margin: 8px auto;
+  }
   /* About us */
   #about-us {
     width: 80%;
@@ -654,6 +679,9 @@ body {
 }
 @media /* extra-large */ (min-width: 1025px) {
   /* Header */
+  .hamburger-wrap {
+    max-width: 1200px;
+  }
   .slide-content span {
     font-size: 90px;
     padding: 0 90px;
@@ -668,6 +696,15 @@ body {
   }
   header .arrow {
     margin-top: -19px;
+  }
+  /* Hamburger menu */
+  .hamburger {
+    margin-top: 4%;
+    right: 3%;
+  }
+  .hamburger .line {
+    width: 55px;
+    margin: 8px auto;
   }
   /* About us */
   #about-us {
