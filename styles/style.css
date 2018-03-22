@@ -88,6 +88,7 @@ body {
   margin-top: 6%;
   right: 9%;
   cursor: pointer;
+  z-index: 1;
 }
 .hamburger .line {
   width: 40px;
@@ -116,6 +117,35 @@ body {
   -o-transition: translateY(-13px) rotate(-45deg);
 }
 /* /Hamburger Menu */
+
+/* Menu Takeover */
+.menu-takeover {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100vh;
+}
+.takeover-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6bbbb;
+  opacity: 0.9;
+}
+.menu-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  list-style-type: none;
+  font-size: 30px;
+  color: white;
+}
+.menu-component {
+  border-bottom: 1px dotted #fff;
+  padding: 20px;
+}
+/* /Menu Takeover */
 
 /* about us*/
 
