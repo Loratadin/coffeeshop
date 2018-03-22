@@ -77,6 +77,39 @@ body {
 
 /*/ slider*/
 
+/* Hamburger Menu */
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger .line {
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: #f6bbbb;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+  -moz-animation: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+  -moz-animation: translateY(13px) rotate(45deg);
+  -webkit-transition: translateY(13px) rotate(45deg);
+  -o-transition: translateY(13px) rotate(45deg);
+}
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+  -moz-animation: translateY(-13px) rotate(-45deg);
+  -webkit-transition: translateY(-13px) rotate(-45deg);
+  -o-transition: translateY(-13px) rotate(-45deg);
+}
+/* /Hamburger Menu */
+
 /* about us*/
 
 #about-us {
