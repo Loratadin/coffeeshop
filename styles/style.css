@@ -523,6 +523,34 @@ body {
   width: 100%;
   height: 350px;
 }
+.footer-nav {
+  position: absolute;
+  top: 39%;
+  left: 5%;
+  text-decoration-style: none;
+}
+.copyright {
+  position: absolute;
+  top: 80%;
+  right: 43%;
+  font-size: 10px;
+}
+.footer-nav-item {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  margin: 0 15px;
+}
+.socials {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+}
+.socials-item {
+  display: inline-block;
+  margin: 0 50px;
+}
 /* /Footer */
 
 /* Media Queries*/
