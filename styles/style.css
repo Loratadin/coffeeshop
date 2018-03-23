@@ -541,6 +541,19 @@ body {
   font-size: 14px;
   display: inline-block;
   margin: 0 15px;
+  cursor: pointer;
+}
+.crossed {
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  width: 110%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+}
+.footer-nav-item:hover .crossed {
+  opacity: 1;
 }
 .socials {
   position: absolute;
@@ -550,6 +563,13 @@ body {
 .socials-item {
   display: inline-block;
   margin: 0 50px;
+  cursor: pointer;
+  width: 30px;
+  transition: transform 2000ms ease-in-out;
+}
+
+.socials-item:hover .footer-icon {
+  transform: scale(1.5, 1.5);
 }
 /* /Footer */
 
