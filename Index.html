@@ -12,9 +12,14 @@
     <meta name="author" content="Tania Shulga">
 </head>
 
+<!-- TODO: Adjust comments using css classes only -->
 <body>
     <!--header-->
+    <!-- TODO: Not a mistake, but usually such classes
+        called "wrapper" and not "wrap"
+      -->
     <header class="wrap">
+        <!-- TODO: The same thing -->
         <div class="hamburger-wrap">
             <div class="hamburger">
                 <span class="line"></span>
@@ -23,6 +28,11 @@
             </div>
         </div>
         <div class="menu-takeover">
+            <!-- 
+                TODO: Empty div tag should exist as it doesn't have "symantic sense".
+                Please replace it with pseudo element for 
+                "menu-takeover"
+            -->
             <div class="takeover-bg"></div>
             <ul class="menu-content">
                 <li class="menu-component">About Us</li>
@@ -31,6 +41,10 @@
                 <li class="menu-component">Where to Buy</li>
             </ul>
         </div>
+        <!-- 
+            TODO: "arrow-left" should be inside the <div id="slider"> since it's not a standalone
+            element, but part of the slider and doesn't have semantic sense on its own.
+         -->
         <div id="arrow-left" class="arrow"></div>
         <div id="slider">
             <div class="slide slide1">
@@ -49,11 +63,20 @@
                 </div>
             </div>
         </div>
+        <!-- 
+            TODO: "arrow-right" should be inside the <div id="slider"> since it's not a standalone
+            element, but part of the slider and doesn't have semantic sense on its own.
+         -->
         <div id="arrow-right" class="arrow"></div>
     </header>
     <!--/header-->
     <!--about us-->
+    <!-- TODO: add attribute class for CSS. Implement CSS respectively -->
     <section id="about-us">
+        <!-- 
+            TODO: refactor headers to be ADA compliant
+            https://sergeome.com/blog/2017/12/24/make-your-site-accessible-step-by-step-instruction/#every-page-should-have-right-heading-structure
+         -->
         <h3>coffeeshop</h3>
         <h2 class="uppercase">top level quality</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias possimus quia maxime laboriosam, impedit
@@ -67,6 +90,7 @@
         <div class="layer bottom">
             <div class="content-wrap">
                 <div class="content-body">
+                    <!-- TODO: There should be only one h1 on the page -->
                     <h1>Look Sharp</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur praesentium, ipsum porro eius provident
                         perferendis architecto error a tempore reprehenderit!</p>
@@ -87,14 +111,18 @@
         <div class="handle"></div>
     </section>
     <!--/skewed-->
+    <!-- TODO: Rename with meaningful class -->
     <div class="pimg1">
+        <!-- TODO: Rename with meaningful class -->
         <div class="ptext">
             <span class="border">
                 Find your taste
             </span>
         </div>
     </div>
+    <!-- TODO: Make consistent comment structure -->
     <!-- Test section -->
+    <!-- TODO: Rename with meaningful class -->
     <section class="test">
         <h2>Organic Food</h2>
         <div class="menu menu-wrap">
@@ -121,7 +149,9 @@
         </div>
     </section>
     <!-- /Test section -->
+    <!-- TODO: Rename with meaningful class -->
     <div class="pimg2">
+        <!-- TODO: Rename with meaningful class -->
         <div class="ptext">
             <span class="border trans">
                 Where to buy
@@ -137,7 +167,9 @@
             perferendis! Amet unde repellat iure esse at voluptatibus eveniet.
         </p>
     </section>
+    <!-- TODO: Rename with meaningful class -->
     <div class="pimg3">
+        <!-- TODO: Rename with meaningful class -->
         <div class="ptext">
             <span class="border trans dark">
                 Real espresso
@@ -153,7 +185,9 @@
             perferendis! Amet unde repellat iure esse at voluptatibus eveniet.
         </p>
     </section>
+    <!-- TODO: Rename with meaningful class -->
     <div class="pimg1">
+        <!-- TODO: Rename with meaningful class -->
         <div class="ptext">
             <span class="border">
                 Find your taste
@@ -162,6 +196,7 @@
     </div>
     <footer class="footer">
         <div class="footer-text-wrap">
+            <!-- TODO: HTML Formatting -->
             <ul class="footer-nav">
                     <li class="footer-nav-item">
                         <div class="crossed"></div>
@@ -182,6 +217,7 @@
             </ul>
             <div class="copyright">© 2018 Coffeeshop. All Rights Reserved.</div>
             <ul class="socials">
+                <!-- TODO: HTML Formatting -->
                 <li class="socials-item">
                         <img class="footer-icon" src="./images/youtube.png">
                 </li>
