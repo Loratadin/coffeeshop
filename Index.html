@@ -2,238 +2,194 @@
 <html>
 
 <head>
-    <title>coffeeshop</title>
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="icon" href="./images/coffeecup-logo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="coffeeshop">
-    <meta name="keywords" content="coffee, coffeeshop">
-    <meta name="author" content="Tania Shulga">
+  <title>coffeeshop</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="icon" href="./images/coffeecup-logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="coffeeshop">
+  <meta name="keywords" content="coffee, coffeeshop">
+  <meta name="author" content="Tania Shulga">
 </head>
 
-<!-- TODO: Adjust comments using css classes only -->
 <body>
-    <!--header-->
-    <!-- TODO: Not a mistake, but usually such classes
-        called "wrapper" and not "wrap"
-      -->
-    <header class="wrap">
-        <!-- TODO: The same thing -->
-        <div class="hamburger-wrap">
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
+  <!-- header wrapper -->
+  <header class="wrapper">
+    <div class="hamburger-wrapper">
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="menu-takeover">
+      <div class="takeover-bg"></div>
+      <ul class="menu-content">
+        <li class="menu-component">About Us</li>
+        <li class="menu-component">Find Your Taste</li>
+        <li class="menu-component">Organic Food</li>
+        <li class="menu-component">Where to Buy</li>
+      </ul>
+    </div>
+    <div id="slider" class="slider">
+      <div id="arrow-left" class="arrow"></div>
+      <div id="arrow-right" class="arrow"></div>
+      <div class="slide slide1">
+        <div class="slide-content">
+          <h1 class="header-text">Original Italian Receipe</h1>
         </div>
-        <div class="menu-takeover">
-            <!-- 
-                TODO: Empty div tag should exist as it doesn't have "symantic sense".
-                Please replace it with pseudo element for 
-                "menu-takeover"
-            -->
-            <div class="takeover-bg"></div>
-            <ul class="menu-content">
-                <li class="menu-component">About Us</li>
-                <li class="menu-component">Find Your Taste</li>
-                <li class="menu-component">Organic Food</li>
-                <li class="menu-component">Where to Buy</li>
-            </ul>
+      </div>
+      <div class="slide slide2">
+        <div class="slide-content">
+          <h1 class="header-text">Premium Coffee Beens</h1>
         </div>
-        <!-- 
-            TODO: "arrow-left" should be inside the <div id="slider"> since it's not a standalone
-            element, but part of the slider and doesn't have semantic sense on its own.
-         -->
-        <div id="arrow-left" class="arrow"></div>
-        <div id="slider">
-            <div class="slide slide1">
-                <div class="slide-content">
-                    <span class="header-text">Original Italian Receipe</span>
-                </div>
-            </div>
-            <div class="slide slide2">
-                <div class="slide-content">
-                    <span class="header-text">Premium Coffee Beens</span>
-                </div>
-            </div>
-            <div class="slide slide3">
-                <div class="slide-content">
-                    <span class="header-text">Aroma Coffee Therapy</span>
-                </div>
-            </div>
+      </div>
+      <div class="slide slide3">
+        <div class="slide-content">
+          <h1 class="header-text">Aroma Coffee Therapy</h1>
         </div>
-        <!-- 
-            TODO: "arrow-right" should be inside the <div id="slider"> since it's not a standalone
-            element, but part of the slider and doesn't have semantic sense on its own.
-         -->
-        <div id="arrow-right" class="arrow"></div>
-    </header>
-    <!--/header-->
-    <!--about us-->
-    <!-- TODO: add attribute class for CSS. Implement CSS respectively -->
-    <section id="about-us">
-        <!-- 
-            TODO: refactor headers to be ADA compliant
-            https://sergeome.com/blog/2017/12/24/make-your-site-accessible-step-by-step-instruction/#every-page-should-have-right-heading-structure
-         -->
-        <h3>coffeeshop</h3>
-        <h2 class="uppercase">top level quality</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias possimus quia maxime laboriosam, impedit
-            repudiandae pariatur iusto facere perspiciatis itaque, aperiam quam illum porro ut quaerat reiciendis voluptatum
-            quo neque. Optio at iste dignissimos debitis odit sit, aut laborum atque labore nihil alias, ut quaerat assumenda
-            fugit qui eligendi.</p>
-    </section>
-    <!--/about us-->
-    <!--skewed-->
-    <section id="wrapper" class="skewed">
-        <div class="layer bottom">
-            <div class="content-wrap">
-                <div class="content-body">
-                    <!-- TODO: There should be only one h1 on the page -->
-                    <h1>Look Sharp</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur praesentium, ipsum porro eius provident
-                        perferendis architecto error a tempore reprehenderit!</p>
-                </div>
-                <img src="./images/cup-grey.png" alt="">
-            </div>
+      </div>
+    </div>
+  </header>
+  <!-- /header wrapper -->
+  <!-- about us -->
+  <section id="about-us" class="about-us">
+    <h3>coffeeshop</h3>
+    <h2 class="uppercase">top level quality</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias possimus quia maxime laboriosam, impedit repudiandae pariatur iusto facere perspiciatis itaque, aperiam quam illum porro ut quaerat reiciendis voluptatum quo neque. Optio at
+      iste dignissimos debitis odit sit, aut laborum atque labore nihil alias, ut quaerat assumenda fugit qui eligendi.</p>
+  </section>
+  <!--/about us-->
+  <!--skewed-->
+  <section id="wrapper" class="skewed">
+    <div class="layer bottom">
+      <div class="content-wrap">
+        <div class="content-body">
+          <h3>Look Sharp</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur praesentium, ipsum porro eius provident perferendis architecto error a tempore reprehenderit!</p>
         </div>
-        <div class="layer top">
-            <div class="content-wrap">
-                <div class="content-body">
-                    <h1>Get Energy</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur praesentium, ipsum porro eius provident
-                        perferendis architecto error a tempore reprehenderit!</p>
-                </div>
-                <img src="./images/cup-green.png" alt="">
-            </div>
+        <img src="./images/cup-grey.png" alt="">
+      </div>
+    </div>
+    <div class="layer top">
+      <div class="content-wrap">
+        <div class="content-body">
+          <h3>Get Energy</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur praesentium, ipsum porro eius provident perferendis architecto error a tempore reprehenderit!</p>
         </div>
-        <div class="handle"></div>
-    </section>
-    <!--/skewed-->
-    <!-- TODO: Rename with meaningful class -->
-    <div class="pimg1">
-        <!-- TODO: Rename with meaningful class -->
-        <div class="ptext">
-            <span class="border">
+        <img src="./images/cup-green.png" alt="">
+      </div>
+    </div>
+    <div class="handle"></div>
+  </section>
+  <!--/skewed-->
+  <div class="find-taste">
+    <div class="text-frame">
+      <span class="border">
                 Find your taste
             </span>
-        </div>
     </div>
-    <!-- TODO: Make consistent comment structure -->
-    <!-- Test section -->
-    <!-- TODO: Rename with meaningful class -->
-    <section class="test">
-        <h2>Organic Food</h2>
-        <div class="menu menu-wrap">
-            <div class="menu-item fruits">
-                <div class="first-frame">
-                    <p>Quia sint inventore quibusdam.</p>
-                </div>
-                <img class="menu-logo" src="./images/fruits.png">
-                <span>Consectetur li!</span>
-            </div>
-            <div class="menu-item pasta">
-                <div class="second-frame">
-                    <p>Consectetur</p>
-                </div>
-                <img class="menu-logo" src="./images/pasta.png">
-                <span>Mollitia ducimus!</span>
-            </div>
-            <div class="menu-item steak">
-                <div class="decor-line1"></div>
-                <div class="decor-line2"></div>
-                <img class="menu-logo" src="./images/steak.png">
-                <span>Cumque itaque!</span>
-            </div>
+  </div>
+  <!-- Food menu -->
+  <section class="food-menu">
+    <h2>Organic Food</h2>
+    <div class="menu menu-wrapper">
+      <div class="menu-item fruits">
+        <div class="first-frame">
+          <p>Quia sint inventore quibusdam.</p>
         </div>
-    </section>
-    <!-- /Test section -->
-    <!-- TODO: Rename with meaningful class -->
-    <div class="pimg2">
-        <!-- TODO: Rename with meaningful class -->
-        <div class="ptext">
-            <span class="border trans">
+        <img class="menu-logo" src="./images/fruits.png">
+        <span>Consectetur li!</span>
+      </div>
+      <div class="menu-item pasta">
+        <div class="second-frame">
+          <p>Consectetur</p>
+        </div>
+        <img class="menu-logo" src="./images/pasta.png">
+        <span>Mollitia ducimus!</span>
+      </div>
+      <div class="menu-item steak">
+        <div class="decor-line1"></div>
+        <div class="decor-line2"></div>
+        <img class="menu-logo" src="./images/steak.png">
+        <span>Cumque itaque!</span>
+      </div>
+    </div>
+  </section>
+  <!-- /Food menu -->
+  <div class="buy-section">
+    <div class="text-frame">
+      <span class="border trans">
                 Where to buy
             </span>
-        </div>
     </div>
-    <section class="section section-dark">
-        <h2>Section two</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste possimus, tempore, soluta similique, illo earum rerum
-            quaerat officiis fugiat officia sunt temporibus sint magnam iusto culpa quo minima aperiam cupiditate numquam
-            eum dolorum sed animi? Eligendi, ab consequuntur! Est atque dignissimos quas facere dicta totam repudiandae,
-            numquam aperiam beatae laborum consectetur quis culpa necessitatibus assumenda harum eaque veniam nam officiis
-            perferendis! Amet unde repellat iure esse at voluptatibus eveniet.
-        </p>
-    </section>
-    <!-- TODO: Rename with meaningful class -->
-    <div class="pimg3">
-        <!-- TODO: Rename with meaningful class -->
-        <div class="ptext">
-            <span class="border trans dark">
+  </div>
+  <section class="section section-dark">
+    <h2>Section two</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste possimus, tempore, soluta similique, illo earum rerum quaerat officiis fugiat officia sunt temporibus sint magnam iusto culpa quo minima aperiam cupiditate numquam eum dolorum sed animi?
+      Eligendi, ab consequuntur! Est atque dignissimos quas facere dicta totam repudiandae, numquam aperiam beatae laborum consectetur quis culpa necessitatibus assumenda harum eaque veniam nam officiis perferendis! Amet unde repellat iure esse at voluptatibus
+      eveniet.
+    </p>
+  </section>
+  <div class="espresso">
+    <div class="text-frame">
+      <span class="border trans dark">
                 Real espresso
             </span>
-        </div>
     </div>
-    <section class="section section-dark">
-        <h2>Section three</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste possimus, tempore, soluta similique, illo earum rerum
-            quaerat officiis fugiat officia sunt temporibus sint magnam iusto culpa quo minima aperiam cupiditate numquam
-            eum dolorum sed animi? Eligendi, ab consequuntur! Est atque dignissimos quas facere dicta totam repudiandae,
-            numquam aperiam beatae laborum consectetur quis culpa necessitatibus assumenda harum eaque veniam nam officiis
-            perferendis! Amet unde repellat iure esse at voluptatibus eveniet.
-        </p>
-    </section>
-    <!-- TODO: Rename with meaningful class -->
-    <div class="pimg1">
-        <!-- TODO: Rename with meaningful class -->
-        <div class="ptext">
-            <span class="border">
+  </div>
+  <section class="section section-dark">
+    <h2>Section three</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste possimus, tempore, soluta similique, illo earum rerum quaerat officiis fugiat officia sunt temporibus sint magnam iusto culpa quo minima aperiam cupiditate numquam eum dolorum sed animi?
+      Eligendi, ab consequuntur! Est atque dignissimos quas facere dicta totam repudiandae, numquam aperiam beatae laborum consectetur quis culpa necessitatibus assumenda harum eaque veniam nam officiis perferendis! Amet unde repellat iure esse at voluptatibus
+      eveniet.
+    </p>
+  </section>
+  <div class="find-taste">
+    <div class="text-frame">
+      <span class="border">
                 Find your taste
             </span>
-        </div>
     </div>
-    <footer class="footer">
-        <div class="footer-text-wrap">
-            <!-- TODO: HTML Formatting -->
-            <ul class="footer-nav">
-                    <li class="footer-nav-item">
-                        <div class="crossed"></div>
-                        <span>about us</span>
-                    </li>
-                    <li class="footer-nav-item">
-                            <div class="crossed"></div>
-                            <span>organic food</span>
-                    </li>
-                    <li class="footer-nav-item">
-                            <div class="crossed"></div>
-                            <span>where to buy</span>
-                    </li>
-                    <li class="footer-nav-item">
-                            <div class="crossed"></div>
-                            <span>contact us</span>
-                    </li>
-            </ul>
-            <div class="copyright">© 2018 Coffeeshop. All Rights Reserved.</div>
-            <ul class="socials">
-                <!-- TODO: HTML Formatting -->
-                <li class="socials-item">
-                        <img class="footer-icon" src="./images/youtube.png">
-                </li>
-                <li class="socials-item">
-                        <img class="footer-icon" src="./images/instagram.png">
-                </li>
-                <li class="socials-item">
-                        <img class="footer-icon" src="./images/facebook.png">
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <script src="./js/slider.js"></script>
-    <script src="./js/skewed.js"></script>
-    <script src="./js/vendor/jquery.js"></script>
-    <script src="./js/hamburger.js"></script>
+  </div>
+  <footer class="footer">
+    <div class="footer-text-wrap">
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <div class="crossed"></div>
+          <span>about us</span>
+        </li>
+        <li class="footer-nav-item">
+          <div class="crossed"></div>
+          <span>organic food</span>
+        </li>
+        <li class="footer-nav-item">
+          <div class="crossed"></div>
+          <span>where to buy</span>
+        </li>
+        <li class="footer-nav-item">
+          <div class="crossed"></div>
+          <span>contact us</span>
+        </li>
+      </ul>
+      <div class="copyright">© 2018 Coffeeshop. All Rights Reserved.</div>
+      <ul class="socials">
+        <li class="socials-item">
+          <img class="footer-icon" src="./images/youtube.png">
+        </li>
+        <li class="socials-item">
+          <img class="footer-icon" src="./images/instagram.png">
+        </li>
+        <li class="socials-item">
+          <img class="footer-icon" src="./images/facebook.png">
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/slider.js"></script>
+  <script src="./js/skewed.js"></script>
+  <script src="./js/vendor/jquery.js"></script>
+  <script src="./js/hamburger.js"></script>
 </body>
 
 </html>
