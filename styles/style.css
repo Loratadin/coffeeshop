@@ -5,6 +5,7 @@
 }
 
 body {
+  /* TODO: Why do you need this one? Seems to be redundant */
   overflow-x: hidden;
 }
 
@@ -14,6 +15,17 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+  /* TODO: .slider and .wrapper don't need these styles. 
+  * As far as I can see these styles are only for .slide-content.
+  * Usually, parents will take the dimensions from the children. In
+  * this case .slide-content will set with and height and parents 
+  * .slider and .wrapper will pick up on those.
+  */
+
+  /* TODO: Please, write the styles that are only needed. 
+  * Avoid adding unnecessary styles as it will be harder to
+  * deal with it in a future. Please check this for all project.
+  */
 }
 
 .wrapper {
@@ -44,6 +56,20 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* TODO: 
+   * 1. The same story: unnecessary styles. 
+   * I found that at least two can be eliminated.
+   *
+   *
+   * 2. I want you to implement alternative solution 
+   * without using a flexblox (for learning purpose).
+   * TIP: for this case you need to leave only "text-align: center"
+   * here and add some styles for .slide-content h1:
+   * position: ?;
+   * top: ?;
+   * transform: ?;
+   * After you finish with those both you also need to adjust 
+   */
 }
 
 .slide-content h1 {
@@ -152,6 +178,7 @@ body {
   list-style-type: none;
   font-size: 24px;
   color: white;
+  /* TODO: It's better use hex colors (#fff) instead if strings like white. */
 }
 
 .menu-component {
@@ -547,6 +574,7 @@ body {
   font-size: 18px;
 }
 
+/* TODO: fix menu overlaps */
 .footer-text-wrap {
   position: relative;
   width: 100%;
