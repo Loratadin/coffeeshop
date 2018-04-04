@@ -4,35 +4,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  /* TODO: Why do you need this one? Seems to be redundant */
-  overflow-x: hidden;
-}
-
-.slider,
-.wrapper,
-.slide-content {
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-  /* TODO: .slider and .wrapper don't need these styles. 
-  * As far as I can see these styles are only for .slide-content.
-  * Usually, parents will take the dimensions from the children. In
-  * this case .slide-content will set with and height and parents 
-  * .slider and .wrapper will pick up on those.
-  */
-
-  /* TODO: Please, write the styles that are only needed. 
-  * Avoid adding unnecessary styles as it will be harder to
-  * deal with it in a future. Please check this for all project.
-  */
-}
-
 .wrapper {
   position: relative;
+  overflow-x: hidden;
 }
-
+.slider {
+  position: relative;
+}
 .slide {
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,29 +31,20 @@ body {
 }
 
 .slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  /* TODO: 
-   * 1. The same story: unnecessary styles. 
-   * I found that at least two can be eliminated.
-   *
-   *
-   * 2. I want you to implement alternative solution 
-   * without using a flexblox (for learning purpose).
-   * TIP: for this case you need to leave only "text-align: center"
-   * here and add some styles for .slide-content h1:
-   * position: ?;
-   * top: ?;
-   * transform: ?;
-   * After you finish with those both you also need to adjust 
-   */
+  width: 100%;
+  height: 100vh;
 }
 
 .slide-content h1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  text-align: center;
   font-size: 30px;
+  box-sizing: border-box;
   padding: 0 20px;
   color: #f6bbbb;
 }
@@ -640,10 +611,7 @@ body {
 
 /* Media Queries*/
 
-@media
-/* medium */
-
-(min-width: 451px) {
+@media /* medium */ (min-width: 451px) {
   /* Header */
   .slide-content h1 {
     font-size: 40px;
@@ -760,10 +728,7 @@ body {
   }
 }
 
-@media
-/* large */
-
-(min-width: 769px) {
+@media /* large */ (min-width: 769px) {
   /* Header */
   .slide-content h1 {
     font-size: 60px;
@@ -866,10 +831,7 @@ body {
   }
 }
 
-@media
-/* extra-large */
-
-(min-width: 1025px) {
+@media /* extra-large */ (min-width: 1025px) {
   /* Header */
   .hamburger-wrapper {
     max-width: 1200px;
