@@ -8,9 +8,11 @@
   position: relative;
   overflow-x: hidden;
 }
+
 .slider {
   position: relative;
 }
+
 .slide {
   height: 100vh;
   background-size: cover;
@@ -192,21 +194,21 @@
 .skewed {
   position: relative;
   width: 100%;
-  min-height: 55vw;
+  min-height: 55vh;
   overflow: hidden;
 }
 
 .layer {
   position: absolute;
   width: 100vw;
-  min-height: 55vw;
+  min-height: 55vh;
   overflow: hidden;
 }
 
 .layer .content-wrap {
   position: absolute;
   width: 100vw;
-  min-height: 55vw;
+  min-height: 55vh;
 }
 
 .layer .content-body {
@@ -598,7 +600,10 @@
 
 /* Media Queries*/
 
-@media /* medium */ (min-width: 451px) {
+@media
+/* medium */
+
+(min-width: 451px) {
   /* Header */
   .slide-content h1 {
     font-size: 40px;
@@ -719,7 +724,10 @@
   }
 }
 
-@media /* large */ (min-width: 769px) {
+@media
+/* large */
+
+(min-width: 769px) {
   /* Header */
   .slide-content h1 {
     font-size: 60px;
@@ -831,7 +839,10 @@
   }
 }
 
-@media /* extra-large */ (min-width: 1025px) {
+@media
+/* extra-large */
+
+(min-width: 1025px) {
   /* Header */
   .hamburger-wrapper {
     max-width: 1200px;
